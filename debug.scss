@@ -1,0 +1,51 @@
+// Linting HTML using CSS
+
+// Inline Styles
+*[style] { 
+    border: 5px solid red; /* Style to make the elements noticeable */
+}
+
+// Faulty or Missing Link Targets
+
+a:not([href])  
+a:[href="#"],  
+a:[href=""],  
+a[href*="javascript:void(0)"] { … }  
+
+// Unaccessible Images
+
+img:not([alt]) { ... }
+img[alt=""] { ... } 
+
+// Missing Document Language
+
+html:not([lang]),  
+html[lang=""] { ... }
+
+// Incorrect Character Set
+
+meta[charset]:not([charset="UTF-8"]) { ... } 
+
+// Unlabelled Form Elements
+
+input:not([id]),  
+select:not([id]),  
+textarea:not([id]) { ... }
+
+label:not([for]) { ... }  
+
+input:not([name]),  
+select:not([name]),  
+textarea:not([name]) { ... }  
+
+form:not([name]):not([id]) { ... }  
+
+// Empty Interactive Elements
+
+button:empty,  
+a:empty { ... } 
+
+// Unnecessary or Deprecated Attributes
+
+script[type="text/javascript"],  
+link[rel="stylesheet"][type="text/css"] { ... } 

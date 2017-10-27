@@ -1,0 +1,79 @@
+.bannerWrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.bannerWrap img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.bannerWrap .content {
+  background: #fff;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+.bannerWrap h2 {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.bannerWrap p {
+  background: #fff;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding-top: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  .bannerWrap {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  .bannerWrap img {
+    width: 100%;
+  }
+  .bannerWrap .content {
+    background: #fff;
+    margin-top: -30px;
+  }
+  .bannerWrap h2 {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+  .bannerWrap p {
+    background: #fff;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .bannerWrap {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .bannerWrap {
+    width: 940px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1479px) {
+  .bannerWrap {
+    width: 1180px;
+  }
+}
+@media only screen and (min-width: 1480px) and (max-width: 6000px) {
+  .bannerWrap {
+    width: 1412px;
+  }
+}

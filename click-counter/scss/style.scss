@@ -1,0 +1,31 @@
+.btn, #reset {
+  color: #fff;
+  border: 2px solid #000;
+  padding: 10px;
+  background: yellow;
+  color: #000;
+  font-family: Arial;
+  cursor : pointer;
+}
+
+.active {
+  background: blue;
+  color:  #fff;
+}
+
+.disabled {
+  background: red;
+}
+
+#reset {
+  background: #fff;
+}
+
+div {
+  width:100px;
+  margin: 10px;
+}
+
+:focus {
+  outline: none;
+}

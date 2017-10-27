@@ -1,0 +1,201 @@
+// fonts
+
+@font-face {
+    font-family: BrightbookBold;
+    src: url(../fonts/Brightbook-Bold.ttf);
+}
+
+@font-face {
+    font-family: Brightbookregular;
+    src: url(../fonts/Brightbook-regular.ttf);
+}
+
+//grid
+@import "grid";
+
+//reset
+h1, h3, h2, p, a, li, ul{
+  padding: 0;
+  margin:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e0e0e0;
+  font-family: Brightbookregular;
+  font-size: 16px;
+}
+
+//helper classes
+
+.red {
+  color: #ff1744
+}
+
+.grey {
+  color: #757575;
+}
+
+.lightgrey {
+  color: #e0e0e0;
+}
+
+// styles
+
+.sidebar {
+  background: #00C853;
+  min-height: 100vh;
+  height: 100%;
+  float: left;
+
+  img {
+    width: 100%;
+    padding-top: 120px;
+  }
+}
+
+.invoiceWrap {
+  float: left;
+  width: 93%;
+  img {
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+
+  .header {
+    background: #fff;
+    margin:0;
+    text-align: center;
+    h1 {
+      font-size: 3em;
+      font-family: Brightbookbold;
+    }
+    h3 {
+      color: #00C853;
+      font-size: 1.3em;
+      margin: 0 auto;
+      font-family: Brightbookregular;
+      font-weight: lighter;
+    }
+    ul li{
+      display: inline;
+      text-decoration: none;
+    }
+    nav {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+    .mainnav li {
+      padding-left: 10px;
+      font-family: Brightbookregular;
+      color: #9e9e9e;
+      font-size: 1.3em;
+      font-weight: lighter;
+    }
+    .mainnav li:hover {
+      padding-bottom: 8px;
+      border-bottom: solid 3px #00C853;
+      cursor: pointer;
+      color: #757575
+    }
+    .mainnav li > span {
+      position: relative;
+      top: -10px;
+      color: #fff;
+      font-size: 0.6em;
+      background: #e0e0e0;
+      padding: 3px;
+      border-radius: 5px 5px 5px 5px;
+    }
+  }//header
+}//invoiceWrap
+
+.invoicesDashboard {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: #fff;
+
+  .innerContent {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    max-width: 1420px;
+    h3:nth-child(2){
+      margin: 0 0 10px;
+    }
+    h3 {
+      margin: 10px 0 10px;
+      border-bottom: 2px solid #9e9e9e;
+      line-height: 30px;
+      font-size: 1em;
+      color: #9e9e9e;
+      font-weight: normal;
+      &:before {
+        content: url(../images/clock.png);
+        padding-right: 7px;
+        bottom: -3px;
+        position: relative;
+      }
+    }
+    .header {
+      text-align: left;
+      h2 {
+        margin: 30px 0 30px;
+        font-size: 2.4em;
+        font-family: BrightbookBold;
+      }
+      ul {
+        border-bottom: 2px solid #9e9e9e;
+        padding-bottom: 10px;
+      }
+      li {
+        font-family: BrightbookBold;
+        line-height: 30px;
+        font-size: 1.6em;
+        display: table-cell;
+        width: 8%;
+        &:first-child {
+          width: 14%;
+        }
+        &:last-child {
+          width: 6%;
+        }
+      }
+    }
+
+    .invoiceEntry {
+      border-bottom: 1px solid #ccc;
+      padding: 5px 0 10px;
+      color: #757575;
+      font-size: 16px;
+      .customer {width: 40%;}
+      .invoice {width: 20%}
+      .due {width: 20%}
+      .owed {width: 20%; text-align: right; padding-right: 30px;}
+      .data {width: 10%; font-size: 30px; color: #ccc;}
+      div {
+        display: table-cell;
+      }
+      span {
+        display: block;
+        &:nth-child(2){
+          margin-top:10px;
+        };
+        &:nth-child(3){
+          margin-top:10px;
+        };
+      }
+      i {
+        padding-right: 10px;
+      }
+  }//invoiceEntry
+
+  }
+
+  h3 > span {
+    font-weight: bold;
+  }
+}
